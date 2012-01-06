@@ -3,7 +3,7 @@
 
 Name:kross-interpreters
 Summary: KDE bindings to non-C++ languages
-Version: 4.7.95
+Version: 4.7.97
 Release: 1
 Epoch: 1
 Group: Graphical desktop/KDE
