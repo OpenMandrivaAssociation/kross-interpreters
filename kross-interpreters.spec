@@ -3,13 +3,13 @@
 
 Name:kross-interpreters
 Summary: KDE bindings to non-C++ languages
-Version: 4.8.1
+Version: 4.8.2
 Release: 1
 Epoch: 1
 Group: Graphical desktop/KDE
 License: LGPLv2
 URL: https://projects.kde.org/projects/kde/kdebindings/kross-interpreters
-Source: ftp://ftp.kde.org/pub/kde/stable/%version/src/%name-%version.tar.bz2
+Source: ftp://ftp.kde.org/pub/kde/stable/%version/src/%name-%version.tar.xz
 BuildRequires: kdelibs4-devel >= 2:%version
 BuildRequires: java-devel
 BuildRequires: ruby-devel
