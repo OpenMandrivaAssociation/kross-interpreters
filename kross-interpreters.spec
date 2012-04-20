@@ -1,5 +1,6 @@
 %bcond_with java 0
 %bcond_with falcon 0
+%bcond_with ruby 0
 
 Name:kross-interpreters
 Summary: KDE bindings to non-C++ languages
@@ -12,7 +13,9 @@ URL: https://projects.kde.org/projects/kde/kdebindings/kross-interpreters
 Source: ftp://ftp.kde.org/pub/kde/stable/%version/src/%name-%version.tar.xz
 BuildRequires: kdelibs4-devel >= 2:%version
 BuildRequires: java-devel
+%if %with ruby
 BuildRequires: ruby-devel
+%endif
 BuildRequires: python-devel
 BuildRequires: qscintilla-qt4-devel
 %if %with falcon
@@ -46,6 +49,7 @@ Python kross interpreter
 %_kde_libdir/kde4/krosspython.so
 
 #--------------------------------------------------------------
+%if %with ruby
 
 %package ruby
 Summary: Ruby kross interpreter
@@ -55,6 +59,8 @@ Ruby kross interpreter
 
 %files ruby
 %_kde_libdir/kde4/krossruby.so
+
+%endif
 
 #------------------------------------------------------------
 
