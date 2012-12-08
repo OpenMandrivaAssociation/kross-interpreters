@@ -4,8 +4,8 @@
 
 Name:		kross-interpreters
 Summary:	KDE bindings to non-C++ languages
-Version: 4.9.3
-Release: 1
+Version:	4.9.4
+Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
 License:	LGPLv2
@@ -88,4 +88,57 @@ Falcon KDE 4 bindings.
 
 %install
 %makeinstall_std -C build
+
+%changelog
+* Wed Dec 05 2012 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.9.4-1
+- New version 4.9.4
+
+* Wed Nov 07 2012 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.9.3-1
+- New version 4.9.3
+
+* Thu Oct 04 2012 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.9.2-1
+- New version 4.9.2
+
+* Sat Sep 08 2012 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.9.1-1
+- New version 4.9.1
+
+* Tue Aug 14 2012 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.9.0-1
+- New version 4.9.0
+
+* Sun Jul 22 2012 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.8.97-1
+- New version 4.8.97
+
+* Mon Jul 09 2012 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.8.95-1
+- New version 4.8.95
+
+* Sat Jun 09 2012 Crispin Boylan <crisb@mandriva.org> 1:4.8.4-1
++ Revision: 803700
+- New release
+
+* Fri May 04 2012 Crispin Boylan <crisb@mandriva.org> 1:4.8.3-1
++ Revision: 796231
+- New release
+
+* Fri Apr 20 2012 Crispin Boylan <crisb@mandriva.org> 1:4.8.2-1
++ Revision: 792409
+- Disable ruby for now as it fails to build on ruby 1.9
+- New release
+
+  + Nicolas Lécureuil <nlecureuil@mandriva.com>
+    - New upstream tarball
+
+* Thu Jan 19 2012 Nicolas Lécureuil <nlecureuil@mandriva.com> 1:4.8.0-1
++ Revision: 762480
+- New upstream tarball
+
+* Fri Jan 06 2012 Nicolas Lécureuil <nlecureuil@mandriva.com> 1:4.7.97-1
++ Revision: 758067
+- New upstream tarball
+
+* Thu Dec 22 2011 Nicolas Lécureuil <nlecureuil@mandriva.com> 1:4.7.95-1
++ Revision: 744547
+- New upstream tarball
+- New upstream tarball $NEW_VERSION
+- Import kross-interpreters
+- Create folder
 
