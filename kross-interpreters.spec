@@ -83,9 +83,9 @@ Falcon KDE 4 bindings.
 %setup -q
 
 %build
-export PYTHON=python2
-
-%cmake_kde4
+%cmake_kde4 \
+	-DPYTHON_EXECUTABLE=/usr/bin/python2
+    
 %make
 
 %install
