@@ -16,7 +16,7 @@ BuildRequires:	java-devel
 %if %with ruby
 BuildRequires:	ruby-devel
 %endif
-BuildRequires:	python-devel
+BuildRequires:	pkgconfig(python2)
 BuildRequires:	qscintilla-qt4-devel
 %if %with falcon
 BuildRequires:	falcon-devel
@@ -83,6 +83,8 @@ Falcon KDE 4 bindings.
 %setup -q
 
 %build
+export PYTHON=python2
+
 %cmake_kde4
 %make
 
