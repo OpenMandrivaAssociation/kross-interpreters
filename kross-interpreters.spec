@@ -10,13 +10,13 @@ Epoch:		1
 Group:		Graphical desktop/KDE
 License:	LGPLv2
 URL:		https://projects.kde.org/projects/kde/kdebindings/kross-interpreters
-Source:		ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	kdelibs4-devel
 BuildRequires:	java-devel
 %if %with ruby
 BuildRequires:	ruby-devel
 %endif
-BuildRequires:	python-devel
+BuildRequires:	python2-devel
 BuildRequires:	qscintilla-qt4-devel
 %if %with falcon
 BuildRequires:	falcon-devel
@@ -83,7 +83,7 @@ Falcon KDE 4 bindings.
 %setup -q
 
 %build
-%cmake_kde4
+%cmake_kde4 -DPYTHON_EXECUTABLE=%{__python2}
 %make
 
 %install
