@@ -16,7 +16,7 @@ BuildRequires:	java-devel
 %if %with ruby
 BuildRequires:	ruby-devel
 %endif
-BuildRequires:	python2-devel
+BuildRequires:	python-devel
 BuildRequires:	qscintilla-qt4-devel
 %if %with falcon
 BuildRequires:	falcon-devel
