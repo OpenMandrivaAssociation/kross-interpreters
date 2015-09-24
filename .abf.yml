@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   kross-interpreters-15.08.0.tar.xz: 1ef0a2dfcbc56f8cd9b737f1fa225f4ee386afb2
+sources:
+  kross-interpreters-15.08.1.tar.xz: 95fc28f7db705036f7b568c67623d821ade2cfef

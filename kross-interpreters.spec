@@ -4,7 +4,7 @@
 
 Name:		kross-interpreters
 Summary:	KDE bindings to non-C++ languages
-Version:	15.08.0
+Version:	15.08.1
 Release:	2
 Epoch:		1
 Group:		Graphical desktop/KDE
@@ -12,6 +12,12 @@ License:	LGPLv2
 URL:		https://projects.kde.org/projects/kde/kdebindings/kross-interpreters
 Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(KF5Kross)
+BuildRequires:	cmake(Qt5Core)
+BuildRequires:	cmake(Qt5Gui)
+BuildRequires:	cmake(Qt5Widgets)
+BuildRequires:	cmake(Qt5Test)
+BuildRequires:	cmake(KF5KDELibs4Support)
+BuildRequires:	cmake(ECM)
 BuildRequires:	java-devel
 %if %with ruby
 BuildRequires:	ruby-devel
