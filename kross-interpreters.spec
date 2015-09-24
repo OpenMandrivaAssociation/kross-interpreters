@@ -12,6 +12,7 @@ License:	LGPLv2
 URL:		https://projects.kde.org/projects/kde/kdebindings/kross-interpreters
 Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(KF5Kross)
+BuildRequires:	cmake(KF5KrossUi)
 BuildRequires:	cmake(Qt5Core)
 BuildRequires:	cmake(Qt5Gui)
 BuildRequires:	cmake(Qt5Widgets)
