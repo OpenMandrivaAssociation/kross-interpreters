@@ -4,7 +4,7 @@
 
 Name:		kross-interpreters
 Summary:	KDE bindings to non-C++ languages
-Version:	16.04.1
+Version:	16.04.2
 Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
