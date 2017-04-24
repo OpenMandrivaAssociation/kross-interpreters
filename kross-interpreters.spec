@@ -1,10 +1,10 @@
-%bcond_with java 0
-%bcond_with falcon 0
-%bcond_with ruby 0
+%bcond_without java
+%bcond_without falcon
+%bcond_without ruby
 
 Name:		kross-interpreters
 Summary:	KDE bindings to non-C++ languages
-Version:	16.12.2
+Version:	17.04.0
 Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
@@ -67,7 +67,7 @@ Conflicts:	ruby-kde4 < 1:4.7.0
 Ruby kross interpreter
 
 %files ruby
-%{_libdir}/kde4/krossruby.so
+%{_libdir}/qt5/plugins/krossruby.so
 %endif
 
 #------------------------------------------------------------
