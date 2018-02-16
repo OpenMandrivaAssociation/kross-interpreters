@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   kross-interpreters-17.12.1.tar.xz: 6fbe3da40a71fbaea1d686c803ba424d387dd2be
+sources:
+  kross-interpreters-17.12.2.tar.xz: e143ecdd64568734002697a724ca94229b61ab38
