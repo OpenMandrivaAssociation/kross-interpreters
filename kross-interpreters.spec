@@ -4,7 +4,7 @@
 
 Name:		kross-interpreters
 Summary:	KDE bindings to non-C++ languages
-Version:	 17.12.2
+Version:	18.04.2
 Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
@@ -24,7 +24,6 @@ BuildRequires:	java-devel
 BuildRequires:	ruby-devel
 %endif
 BuildRequires:	python2-devel
-BuildRequires:	qscintilla-qt4-devel
 %if %with falcon
 BuildRequires:	falcon-devel
 %endif
