@@ -6,13 +6,13 @@
 
 Name:		kross-interpreters
 Summary:	KDE bindings to non-C++ languages
-Version:	19.11.90
+Version:	19.12.0
 Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
 License:	LGPLv2
 URL:		https://projects.kde.org/projects/kde/kdebindings/kross-interpreters
-Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(KF5Kross)
 BuildRequires:	cmake(KF5KrossUi)
 BuildRequires:	cmake(Qt5Core)
