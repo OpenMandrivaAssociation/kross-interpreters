@@ -6,7 +6,7 @@
 
 Name:		kross-interpreters
 Summary:	KDE bindings to non-C++ languages
-Version:	22.08.3
+Version:	22.12.0
 Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
