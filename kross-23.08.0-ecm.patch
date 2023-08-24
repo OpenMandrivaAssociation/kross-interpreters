@@ -1,0 +1,9 @@
+diff -up kross-interpreters-23.08.0/CMakeLists.txt.omv~ kross-interpreters-23.08.0/CMakeLists.txt
+--- kross-interpreters-23.08.0/CMakeLists.txt.omv~	2023-08-24 14:06:44.802894798 +0200
++++ kross-interpreters-23.08.0/CMakeLists.txt	2023-08-24 14:06:48.211917724 +0200
+@@ -1,4 +1,4 @@
+-cmake_minimum_required(VERSION 3.0)
++cmake_minimum_required(VERSION 3.16.0)
+ project(KrossPlugins)
+ 
+ # Include KF5 cmake modules

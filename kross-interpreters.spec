@@ -1,18 +1,18 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 
 %bcond_without java
-%bcond_without falcon
 %bcond_without ruby
 
 Name:		kross-interpreters
 Summary:	KDE bindings to non-C++ languages
-Version:	23.04.3
+Version:	23.08.0
 Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
 License:	LGPLv2
 URL:		https://projects.kde.org/projects/kde/kdebindings/kross-interpreters
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
+Patch0:		kross-23.08.0-ecm.patch
 BuildRequires:	cmake(KF5Kross)
 BuildRequires:	cmake(KF5KrossUi)
 BuildRequires:	cmake(Qt5Core)
@@ -25,10 +25,7 @@ BuildRequires:	java-devel
 %if %with ruby
 BuildRequires:	ruby-devel
 %endif
-BuildRequires:	python2-devel
-%if %with falcon
-BuildRequires:	falcon-devel
-%endif
+BuildRequires:	python-devel
 
 %description
 Language interpreters to enable in-process scripting with Kross.
@@ -73,25 +70,9 @@ Ruby kross interpreter
 
 #------------------------------------------------------------
 
-%if %with falcon
-%package -n falcon-kde4
-Summary:	Falcon KDE 4 bindings
-Group:		Development/KDE and Qt
-Requires:	falcon
-
-%description -n falcon-kde4
-Falcon KDE 4 bindings.
-
-# For the moment, Falcon isn't supported
-#%files -n falcon-kde4
-#%{_libdir}/kde4/krossfalcon.so
-%endif
-
-#------------------------------------------------------------
-
 %prep
-%setup -q
-%cmake_kde5 -DPYTHON_EXECUTABLE=%{__python2}
+%autosetup -p1
+%cmake_kde5 -DPYTHON_EXECUTABLE=%{__python}
 
 %build
 %ninja -C build
