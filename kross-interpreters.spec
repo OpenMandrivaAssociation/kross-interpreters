@@ -1,5 +1,6 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 
+%bcond_with python
 %bcond_without java
 %bcond_without ruby
 
@@ -25,7 +26,9 @@ BuildRequires:	java-devel
 %if %with ruby
 BuildRequires:	ruby-devel
 %endif
-BuildRequires:	python-devel
+%if %with python
+BuildRequires:	python2-devel
+%endif
 
 %description
 Language interpreters to enable in-process scripting with Kross.
@@ -45,6 +48,7 @@ Java kross interpreter
 
 #---------------------------------------------------------------
 
+%if %with python
 %package python
 Summary:	Python kross-interpreter
 Conflicts:	python-kde4 < 1:4.7.0
@@ -54,6 +58,7 @@ Python kross interpreter
 
 %files python
 %{_libdir}/qt5/plugins/krosspython.so
+%endif
 
 #--------------------------------------------------------------
 %if %with ruby
