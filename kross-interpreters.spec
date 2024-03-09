@@ -1,13 +1,13 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 
-%bcond_with python
+%bcond_without python
 %bcond_without java
 %bcond_without ruby
 
 Name:		kross-interpreters
 Summary:	KDE bindings to non-C++ languages
-Version:	23.08.4
-Release:	3
+Version:	24.02.0
+Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
 License:	LGPLv2
