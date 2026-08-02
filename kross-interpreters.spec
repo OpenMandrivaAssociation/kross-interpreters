@@ -6,8 +6,8 @@
 
 Name:		kross-interpreters
 Summary:	KDE bindings to non-C++ languages
-Version:	24.02.0
-Release:	2
+Version:	24.12.3
+Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
 License:	LGPLv2
@@ -77,10 +77,10 @@ Ruby kross interpreter
 
 %prep
 %autosetup -p1
-%cmake_kde5 -DPYTHON_EXECUTABLE=%{__python}
 
 %build
-%ninja -C build
+%cmake_kde5 -DPYTHON_EXECUTABLE=%{__python}
+%ninja
 
 %install
 %ninja_install -C build
